@@ -30,11 +30,11 @@ class AppServiceProvider extends ServiceProvider
                 : [];
         });
 
-        if (class_exists(\App\Repo::class)) {
-            // Refresh sushi.
-            $connection = \App\Repo::sushiConnectionName();
-            \DB::setDefaultConnection($connection);
-            (new \App\Repo);
-        }
+        // if (class_exists(\App\Repo::class)) {
+        //     // Refresh sushi.
+        //     $connection = \App\Repo::sushiConnectionName();
+        //     \DB::setDefaultConnection($connection);
+        //     (new \App\Repo);
+        // }
     }
 }
